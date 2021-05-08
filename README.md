@@ -23,7 +23,7 @@ Estructura de Proyecto Lab de Compu II - 2021
 - [ ] No debe haber errores presentes (realizar *Code* > *Inspect Code* para verificar que no haya errores)
 - [ ] Todas las etiquetas deben estar correctamente cerradas
 - [ ] Los ids de los elementos deben ser unívocos
-- [ ] El repositorio no debe contener archivos innecesarios (no debe contener .idea o .vsc, en todo caso emplear **.gitignore**)
+- [X] El repositorio no debe contener archivos innecesarios (no debe contener .idea o .vsc, en todo caso emplear **.gitignore**)
 
 Accesibilidad:
 - [ ] Toda imagen debe tener su etiqueta alt
