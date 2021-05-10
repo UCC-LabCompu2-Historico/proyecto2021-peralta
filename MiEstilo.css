@@ -76,16 +76,11 @@ article{
     text-align: justify;
 }
 
-#esquema{
+.imgVid{
     margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
     display: block;
 }
 
-iframe{
-    margin-top: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-}
+
