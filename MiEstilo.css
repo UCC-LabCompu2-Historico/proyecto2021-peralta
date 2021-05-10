@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #FFFFFF;
+}
+
+header{
+    background-color: #F3F781;
+    width: 100%;
+    height: 100px;
+    display: flex;
+}
+
+header img{
+    width: 37px;
+    height: 37px;
+    padding-top: 31px;
+    padding-left: 60px;
+}
+
+header h1{
+    font-family: Broadway;
+    font-size: 37px;
+    color: #FFB6C1;
+    letter-spacing: 10px;
+    padding-top: 31px;
+    padding-left: 113px;
+}
+
+.cajaElegir{
+    margin-top: 170px;
+    margin-left: 130px;
+    background-color: transparent;
+    width: 203px;
+    height: 143px;
+}
+
+.boton1{
+    width: 193px;
+    height: 37px;
+    margin: 5px 5px 5px 5px;
+    background-color: #FFB6C1;
+    border: none;
+    border-radius: 20px 20px 20px 20px;
+    text-align: center;
+    font-family: "Bookman Old Style";
+    font-size: 16px;
+    color: #000000;
+}
+
+.boton1:hover{
+    background-color: #F6CEE3;
+}
+
+.cajaInfo{
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    height: 450px;
+    background-color: #F2F5A9;
+    overflow: scroll;
+}
+
+.contenedor{
+    display: flex;
+}
+
+article{
+    font-family: "Bookman Old Style";
+    font-size: 16px;
+    color: #000000;
+    padding: 30px 50px 30px 50px;
+    text-align: justify;
+}
+
+#esquema{
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+} /* ? */
