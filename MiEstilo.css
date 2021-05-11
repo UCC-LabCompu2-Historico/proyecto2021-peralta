@@ -3,6 +3,44 @@
     padding: 0;
 }
 
+/* Index */
+
+#fondoInicio{
+    background-color: #F2F5A9;
+}
+
+#tituloInicio{
+    text-align: center;
+    font-family: Broadway, fantasy;
+    font-size: 37px;
+    color: #FFB6C1;
+    letter-spacing: 10px;
+    margin-top: 250px;
+}
+
+.btnInicio{
+    position: relative;
+    top: 10px;
+    left: 410px;
+}
+
+footer{
+    background-color: #FFB6C1;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    text-align: left;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    font-family: "Bookman Old Style", serif;
+    font-size: 16px;
+    color: #000000;
+}
+
+/* Teórico */
+
 body{
     background-color: #FFFFFF;
 }
@@ -84,13 +122,14 @@ article{
     border: none;
 }
 
+/* Práctico */
+
 .texto{
     text-align: center;
     font-family: "Bookman Old Style", serif;
     font-size: 16px;
     color: #000000;
     font-weight: bold;
-    /* Describe el color, estilo y ancho del borde inferior de un elemento */
     border-bottom: 3px solid #FFB6C1;
 }
 
@@ -116,5 +155,3 @@ canvas{
     margin-right: auto;
     display: block;
 }
-
-
