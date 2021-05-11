@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Calcular Intensidad</title>
+    <meta content="Julieta Peralta" name="author">
+    <meta content="Web para cálculo de magnitudes en un Transformador Eléctrico" name="description">
+    <meta content="transformador, tecnología, magnitudes, bobina, inducción" name="keywords">
+    <link rel="stylesheet" href="MiEstilo.css" type="text/css">
+</head>
+<body>
+<header>
+    <a href="Index.html" target="_self"><img src="Imágenes/FlechaVolver.png" alt="Botón en forma de flecha para volver a la página de inicio"></a>
+    <h1>TRANSFORMADOR ELÉCTRICO</h1>
+</header>
+<section class="contenedor">
+    <div class="cajaElegir">
+        <p class="texto">Calcular:</p>
+        <a href="Práctico_1.html" target="_self"><button type="button" class="boton1">Voltaje</button></a>
+        <a href="Práctico_2.html" target="_self"><button type="button" class="boton1">Intensidad</button></a>
+    </div>
+    <div class="cajaInfo">
+        <article>
+            <p>
+                Para calcular la intensidad de la bobina secundaria <b>(I2)</b> deberás ingresar los siguientes datos: <b>I1</b> (intensidad de la bobina primaria),
+                <b>N1</b> (número de vueltas de la bobina primaria), y <b>N2</b> (número de vueltas de la bobina secundaria)
+            </p>
+            <p>
+                <label for="i1"> I1 = </label><input type="number" name="i1" min="1" max="500" step="1" placeholder=" Ingresar" id="i1"> (A)
+            </p>
+            <p>
+                <label for="n1"> N1 = </label><input type="number" name="n1" min="1" max="100" step="1" placeholder=" Ingresar" id="n1">
+            </p>
+            <!--VER id-->
+            <p>
+                <label for="n2"> N2 = </label><input type="number" name="n2" min="1" max="100" step="1" placeholder=" Ingresar" id="n2">
+            </p><br>
+            <!--VER id-->
+            <u>Resultado</u>: <!--Completar-->
+
+            <button type="button" class="boton1 boton2">Simular</button>
+
+            <canvas id="myCanvas2">
+                Your browser does not support the HTML5 canvas tag.
+            </canvas>
+        </article>
+    </div>
+</section>
+</body>
+</html>
