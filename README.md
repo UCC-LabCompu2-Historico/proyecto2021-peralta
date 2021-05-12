@@ -1,7 +1,7 @@
 # Transformador Eléctrico
 Web orientada al conocimiento del Transformador Eléctrico y cálculo de magnitudes.
-Presenta material teórico, donde se explica el concepto, características y principio de funcionamiento. En actividades
-prácticas es posible realizar cálculos de voltaje e intensidad.
+Presenta material teórico, donde se explica el concepto, características y principio de funcionamiento. 
+En actividades prácticas es posible realizar cálculos de voltaje e intensidad.
 
 ## Autores
 * Peralta, Julieta
@@ -33,7 +33,7 @@ Link al proyecto: [Transformador Eléctrico](https://ucc-labcompu2.github.io/pro
 - [X] No utilizar etiquetas deprecadas.
 - [X] El estilo de los elementos debe establecerse en un archivo CSS (prohibido poner el atributo style a los elementos o emplear estilos incrustados).
 - [X] El CSS debe contar mínimo con un tipo de cada forma (por Tag, por ID y por clase).
-- [ ] El código debe estar pusheado en el repositorio (emplear gh-pages), y no debe haber diferencias entre **main** y **gh-pages** (verificar de realizar el Merge).
+- [X] El código debe estar pusheado en el repositorio (emplear gh-pages), y no debe haber diferencias entre **main** y **gh-pages** (verificar de realizar el Merge).
 - [X] No debe haber errores presentes (realizar *Code* > *Inspect Code* para verificar que no haya errores)
 - [X] Todas las etiquetas deben estar correctamente cerradas
 - [X] Los ids de los elementos deben ser unívocos

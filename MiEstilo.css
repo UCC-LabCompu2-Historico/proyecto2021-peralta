@@ -18,10 +18,9 @@
     margin-top: 250px;
 }
 
-.btnInicio{
-    position: relative;
-    top: 10px;
-    left: 410px;
+#btnInicio{
+    margin-top: 10px;
+    text-align: center;
 }
 
 footer{
