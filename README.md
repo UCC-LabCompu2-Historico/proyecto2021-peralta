@@ -51,7 +51,7 @@ Accesibilidad:
 - [ ] Se deben mostrar mensajes de error si el usuario ejecuta alguna acción inválida o no permitida.
 - [ ] El cálculo del ejercicio debe ser el correcto, independientemente de los valores ingresados (sino, tener en cuenta el mensaje de error)
 - [ ] No debe haber errores JavaScripts presentes. (ver con F12 si hay errores)
-- [ ] Las sugerencias sobre el HTML y CSS realizadas en el anterior parcial dejen ser corregidas.
+- [X] Las sugerencias sobre el HTML y CSS realizadas en el anterior parcial dejen ser corregidas.
 - [ ] Comentar el código JS adecuadamente.
 ```/**
    * Descripción
