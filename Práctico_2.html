@@ -28,19 +28,19 @@
                 <b>N1</b> (número de vueltas de la bobina primaria), y <b>N2</b> (número de vueltas de la bobina secundaria)
             </p>
             <p>
-                <label for="i1"> I1 = </label><input type="number" name="i1" min="1" max="500" step="1" placeholder=" Ingresar" id="i1"> (A)
+                <label for="i1"> I1 = </label><input type="number" name="i1" min="1" step="1" placeholder=" Ingresar" id="i1"> (A)
             </p>
             <p>
-                <label for="n1"> N1 = </label><input type="number" name="n1" min="1" max="100" step="1" placeholder=" Ingresar" id="n1">
+                <label for="n1"> N1 = </label><input type="number" name="n1" min="3" max="27" step="1" placeholder=" Ingresar" id="n1"> *
             </p>
             <p>
-                <label for="n2"> N2 = </label><input type="number" name="n2" min="1" max="100" step="1" placeholder=" Ingresar" id="n2">
+                <label for="n2"> N2 = </label><input type="number" name="n2" min="3" max="27" step="1" placeholder=" Ingresar" id="n2"> *
             </p><br>
 
             <button type="button" class="boton1 boton3" onclick="calcularIntensidad()">Ver resultado</button> <span id="i2"></span>
-            <button type="button" class="boton1 boton2">Simular</button>
+            <button type="button" class="boton1 boton2" onclick="dibujarTransformador(n1.value, n2.value)">Simular</button>
 
-            <canvas id="myCanvas">
+            <canvas id="myCanvas" width="730px" height="330px">
                 Your browser does not support the HTML5 canvas tag.
             </canvas>
         </article>
