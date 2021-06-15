@@ -114,11 +114,11 @@ function dibujarTransformador(valorN1, valorN2){
         alert("Faltan datos");
         canvas.width = canvas.width;
     }else if(valorN1 < 3 || valorN1 > 27){
-        alert("Para simular el valor permitido para N1 está entre 3 y 27");
+        alert("El simulador acepta valores para N1 entre 3 y 27");
         document.getElementById("n1").value = "";
         canvas.width = canvas.width;
     }else if(valorN2 < 3 || valorN2 > 27 ){
-        alert("Para simular el valor permitido para N2 está entre 3 y 27");
+        alert("El simulador acepta valores para N2 entre 3 y 27");
         document.getElementById("n2").value = "";
         canvas.width = canvas.width;
     }else if(valorN1 % 1 != 0 || valorN2 % 1 != 0){

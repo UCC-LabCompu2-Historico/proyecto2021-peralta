@@ -6,9 +6,10 @@ En actividades prácticas es posible realizar cálculos de voltaje e intensidad.
 ## Autores
 * Peralta, Julieta
 
-## Tecnologías Usadas
+## Tecnologías usadas
 * HTML5
 * CSS3
+* JS
 
 Link al proyecto: [Transformador Eléctrico](https://ucc-labcompu2.github.io/proyecto2021-peralta/Index.html)
 
@@ -50,7 +51,7 @@ Accesibilidad:
 - [X] La página web debe contar con al menos un gráfico representativo realizado mediante canvas y que dependa de los datos ingresados en el ejercicio.
 - [X] Se deben mostrar mensajes de error si el usuario ejecuta alguna acción inválida o no permitida.
 - [X] El cálculo del ejercicio debe ser el correcto, independientemente de los valores ingresados (sino, tener en cuenta el mensaje de error)
-- [ ] No debe haber errores JavaScripts presentes. (ver con F12 si hay errores)
+- [X] No debe haber errores JavaScripts presentes. (ver con F12 si hay errores)
 - [X] Las sugerencias sobre el HTML y CSS realizadas en el anterior parcial dejen ser corregidas.
 - [X] Comentar el código JS adecuadamente.
 ```/**
