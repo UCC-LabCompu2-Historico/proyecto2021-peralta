@@ -66,6 +66,6 @@ Accesibilidad:
    
    ### Requisitos del FINAL
    - [X] Presentación el código mediante github.
-   - [ ] El Canvas debe poseer animación con setInterval() o requestAnimationFrame()
+   - [X] El Canvas debe poseer animación con setInterval() o requestAnimationFrame()
    - [X] El cálculo del ejercicio de física debe ser el correcto, independientemente de los valores ingresados.
    - [X] Las sugerencias sobre el HTML, CSS y JavaScript realizadas en el 1er y 2do parcial deben ser corregidas.

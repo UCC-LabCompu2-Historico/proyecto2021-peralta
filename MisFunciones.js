@@ -137,3 +137,69 @@ function limpiarCanvas(){
 
     canvas.width = canvas.width;
 }
+
+/**
+ * Descripción de que hace la función
+ * @method Nombre de la función
+ * @param {string} ParámetroA - Explicación de que valor almacena ParámetroA
+ * @param {number} ParámetroB - Explicación de que valor almacena ParámetroB
+ * @return Valor que retorna
+ */
+function limpiarResultado(){
+    document.getElementById("v2").innerHTML = "";
+    document.getElementById("i2").innerHTML = "";
+}
+
+/**
+ * Descripción de que hace la función
+ * @method Nombre de la función
+ * @param {string} ParámetroA - Explicación de que valor almacena ParámetroA
+ * @param {number} ParámetroB - Explicación de que valor almacena ParámetroB
+ * @return Valor que retorna
+ */
+xDer=0;
+xIzq=0;
+dx=20;
+function animarFlecha(){
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
+
+    var xMax = canvas.width;
+    var yMax = canvas.height;
+
+    ctx.fillStyle = "#F3F781";
+
+    //Flecha que mira hacia la derecha
+    ctx.clearRect(170, 60, 20+xDer, 20);
+    ctx.beginPath();
+    ctx.moveTo(170+xDer, 80);
+    ctx.lineTo(170+xDer, 60);
+    ctx.lineTo(190+xDer, 70);
+    ctx.lineTo(170+xDer, 80);
+    ctx.fill();
+    ctx.closePath();
+
+    xDer+=dx;
+
+    if(xDer>xMax-340){
+        ctx.clearRect(170, 60, 20+xDer, 20);
+        xDer=0;
+    }
+
+    //Flecha que mira hacia la izquierda
+    ctx.clearRect(xMax-190-xIzq, yMax-80, 20+xIzq, 20);
+    ctx.beginPath();
+    ctx.moveTo(xMax-170-xIzq, yMax-60);
+    ctx.lineTo(xMax-170-xIzq, yMax-80);
+    ctx.lineTo(xMax-190-xIzq, yMax-70);
+    ctx.lineTo(xMax-170-xIzq, yMax-60);
+    ctx.fill();
+    ctx.closePath();
+
+    xIzq+=dx;
+
+    if(xIzq>390){
+        ctx.clearRect(xMax-190-xIzq, yMax-80, 20+xIzq, 20);
+        xIzq=0;
+    }
+}
