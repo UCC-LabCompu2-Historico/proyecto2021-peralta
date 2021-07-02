@@ -1,7 +1,8 @@
 # Transformador Eléctrico
 Web orientada al conocimiento del Transformador Eléctrico y cálculo de magnitudes.
 Presenta material teórico, donde se explica el concepto, características y principio de funcionamiento. 
-En actividades prácticas es posible realizar cálculos de voltaje e intensidad.
+En actividades prácticas es posible realizar cálculos de voltaje e intensidad, 
+como así también realizar acciones de simulación, utilizando el número de vueltas de cada bobina.
 
 ## Autores
 * Peralta, Julieta
@@ -64,7 +65,7 @@ Accesibilidad:
    ```
    
    ### Requisitos del FINAL
-   - [ ] Presentación el código mediante github.
+   - [X] Presentación el código mediante github.
    - [ ] El Canvas debe poseer animación con setInterval() o requestAnimationFrame()
-   - [ ] El cálculo del ejercicio de física debe ser el correcto, independientemente de los valores ingresados.
-   - [ ] Las sugerencias sobre el HTML, CSS y JavaScript realizadas en el 1er y 2do parcial deben ser corregidas.
+   - [X] El cálculo del ejercicio de física debe ser el correcto, independientemente de los valores ingresados.
+   - [X] Las sugerencias sobre el HTML, CSS y JavaScript realizadas en el 1er y 2do parcial deben ser corregidas.

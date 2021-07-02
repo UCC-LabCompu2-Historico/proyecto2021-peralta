@@ -61,8 +61,6 @@ function dibujarTransformador(valorN1, valorN2){
     var canvas = document.getElementById("myCanvas");
     var ctx = canvas.getContext("2d");
 
-    canvas.width = canvas.width;
-
     var xMax = canvas.width;
     var yMax = canvas.height;
 
@@ -127,4 +125,15 @@ function dibujarTransformador(valorN1, valorN2){
         document.getElementById("n2").value = "";
         canvas.width = canvas.width;
     }
+}
+
+/**
+ * Limpia el canvas cada vez que se ingresan nuevos datos en los diferentes inputs
+ * @method limpiarCanvas
+ */
+function limpiarCanvas(){
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
+
+    canvas.width = canvas.width;
 }
