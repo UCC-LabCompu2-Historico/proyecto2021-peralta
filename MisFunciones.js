@@ -128,7 +128,7 @@ function dibujarTransformador(valorN1, valorN2){
 }
 
 /**
- * Limpia el canvas cada vez que se ingresan nuevos datos en los diferentes inputs
+ * Borra el canvas cada vez que se ingresan datos nuevos en los diferentes inputs
  * @method limpiarCanvas
  */
 function limpiarCanvas(){
@@ -139,11 +139,8 @@ function limpiarCanvas(){
 }
 
 /**
- * Descripción de que hace la función
- * @method Nombre de la función
- * @param {string} ParámetroA - Explicación de que valor almacena ParámetroA
- * @param {number} ParámetroB - Explicación de que valor almacena ParámetroB
- * @return Valor que retorna
+ * Borra el resultado cada vez que se ingresan datos nuevos en los diferentes inputs
+ * @method limpiarResultado
  */
 function limpiarResultado(){
     document.getElementById("v2").innerHTML = "";
@@ -151,11 +148,8 @@ function limpiarResultado(){
 }
 
 /**
- * Descripción de que hace la función
- * @method Nombre de la función
- * @param {string} ParámetroA - Explicación de que valor almacena ParámetroA
- * @param {number} ParámetroB - Explicación de que valor almacena ParámetroB
- * @return Valor que retorna
+ * Anima las flechas que representan el recorrido del flujo magnético en un transformador eléctrico
+ * @method animarFlecha
  */
 xDer=0;
 xIzq=0;
@@ -166,6 +160,10 @@ function animarFlecha(){
 
     var xMax = canvas.width;
     var yMax = canvas.height;
+
+    var N1, N2;
+    N1 = document.getElementById("n1").value;
+    N2 = document.getElementById("n2").value;
 
     ctx.fillStyle = "#F3F781";
 
@@ -201,5 +199,15 @@ function animarFlecha(){
     if(xIzq>390){
         ctx.clearRect(xMax-190-xIzq, yMax-80, 20+xIzq, 20);
         xIzq=0;
+    }
+
+    if(N1 == "" || N2 == ""){
+        canvas.width = canvas.width;
+    }else if(N1 < 3 || N1 > 27){
+        canvas.width = canvas.width;
+    }else if(N2 < 3 || N2 > 27 ){
+        canvas.width = canvas.width;
+    }else if(N1 % 1 != 0 || N2 % 1 != 0){
+        canvas.width = canvas.width;
     }
 }
