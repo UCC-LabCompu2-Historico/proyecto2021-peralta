@@ -31,6 +31,7 @@ function calcularVoltaje(){
  */
 function calcularIntensidad(){
     var I1, N1, N2;
+
     I1 = document.getElementById("i1").value;
     N1 = document.getElementById("n1").value;
     N2 = document.getElementById("n2").value;
@@ -128,7 +129,7 @@ function dibujarTransformador(valorN1, valorN2){
 }
 
 /**
- * Borra el canvas cada vez que se ingresan datos nuevos en los diferentes inputs
+ * Borra el canvas cada vez que se ingresan datos nuevos en los distintos input
  * @method limpiarCanvas
  */
 function limpiarCanvas(){
@@ -136,10 +137,11 @@ function limpiarCanvas(){
     var ctx = canvas.getContext("2d");
 
     canvas.width = canvas.width;
+    clearInterval(parar);
 }
 
 /**
- * Borra el resultado cada vez que se ingresan datos nuevos en los diferentes inputs
+ * Borra el resultado cada vez que se ingresan datos nuevos en los distintos input
  * @method limpiarResultado
  */
 function limpiarResultado(){
@@ -201,13 +203,17 @@ function animarFlecha(){
         xIzq=0;
     }
 
-    if(N1 == "" || N2 == ""){
+    if(N1 == "" || N2 == "" || N1 < 3 || N1 > 27 || N2 < 3 || N2 > 27 || N1 % 1 != 0 || N2 % 1 != 0){
         canvas.width = canvas.width;
-    }else if(N1 < 3 || N1 > 27){
-        canvas.width = canvas.width;
-    }else if(N2 < 3 || N2 > 27 ){
-        canvas.width = canvas.width;
-    }else if(N1 % 1 != 0 || N2 % 1 != 0){
-        canvas.width = canvas.width;
+        clearInterval(parar);
     }
+}
+
+/**
+ * Llama al setInterval
+ * @method llamarAnimacion
+ */
+var parar = null;
+function llamarAnimacion(){
+    parar = setInterval(animarFlecha,500);
 }
