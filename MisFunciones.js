@@ -116,7 +116,7 @@ function dibujarTransformador(valorN1, valorN2){
         alert("El simulador acepta valores para N1 entre 3 y 27");
         document.getElementById("n1").value = "";
         canvas.width = canvas.width;
-    }else if(valorN2 < 3 || valorN2 > 27 ){
+    }else if(valorN2 < 3 || valorN2 > 27){
         alert("El simulador acepta valores para N2 entre 3 y 27");
         document.getElementById("n2").value = "";
         canvas.width = canvas.width;
@@ -141,11 +141,18 @@ function limpiarCanvas(){
 }
 
 /**
- * Borra el resultado cada vez que se ingresan datos nuevos en los distintos input
- * @method limpiarResultado
+ * Borra el resultado de calcular el voltaje de salida del transformador eléctrico cada vez que se ingresan datos nuevos en los distintos input
+ * @method limpiarResultadoV2
  */
-function limpiarResultado(){
+function limpiarResultadoV2(){
     document.getElementById("v2").innerHTML = "";
+}
+
+/**
+ * Borra el resultado de calcular la intensidad de la bobina secundaria del transformador eléctrico cada vez que se ingresan datos nuevos en los distintos input
+ * @method limpiarResultadoI2
+ */
+function limpiarResultadoI2(){
     document.getElementById("i2").innerHTML = "";
 }
 
